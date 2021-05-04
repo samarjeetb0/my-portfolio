@@ -1,13 +1,13 @@
 import React from 'react';
-// import logo from "../assets/images/mylogo.PNG";
+ import logo from '../assets/images/logo.ico';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-primary">
             <div className="container">
-                <a className="navbar-brand" href="#">SJB
-                    {/* <img className="logo" src={logo} alt="logo..." /> */}
+                <a className="navbar-brand" href="#">
+                    <img className="logo" src={logo} alt="logo..." style={{width: 50, height: 50, borderRadius: 50/2}}  />
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     {/* <span className="navbar-toggler-icon"></span> */}

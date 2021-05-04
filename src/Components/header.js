@@ -1,63 +1,38 @@
 import React from "react";
-import { Jumbotron, Button } from 'reactstrap';
+import Typed from "react-typed"
 
-function Header({ title, name }) {
+const Header = () => {
     return (
-        //  <div>
-        //      {title} / {name}
-        //  </div>
-        <Jumbotron fluid>
-            <h1>Hello, world! {title} : {name}</h1>
-            <p>
-                This is a simple hero unit, a simple jumbotron-style component for calling
-                extra attention to featured content or information.
-            </p>
-            <p>
-                <Button variant="primary">Learn more</Button>
-            </p>
-        </Jumbotron>
-    );
+        <div className="header-wraper">
+            <div className="main-info">
+                <h1>Hi, I am Samar</h1>
+                <Typed className="typed-text" strings={["Web Design","Web Development","Azure","AWS"]}
+                typeSpeed={40} backSpeed={60} loop/>
+                <a href="#" className="btn-main-offer">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    )
 }
 
-// class Header extends React.Component {
-//     render() {
-//       return (
-//         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-//           <a className="navbar-brand" href="/">Navbar</a>
-//           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-//             <span className="navbar-toggler-icon"></span>
-//           </button>
-  
-//           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-//             <ul className="navbar-nav mr-auto">
-//               <li className="nav-item active">
-//                 <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
-//               </li>
-//               <li className="nav-item">
-//                 <a className="nav-link" href="/">Link</a>
-//               </li>
-//               <li className="nav-item dropdown">
-//                 <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-//                   Dropdown
-//                 </a>
-//                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-//                   <a className="dropdown-item" href="/">Action</a>
-//                   <a className="dropdown-item" href="/">Another action</a>
-//                   <div className="dropdown-divider"></div>
-//                   <a className="dropdown-item" href="/">Something else here</a>
-//                 </div>
-//               </li>
-//               <li className="nav-item">
-//                 <a className="nav-link disabled" href="/">Disabled</a>
-//               </li>
-//             </ul>
-//             <form className="form-inline my-2 my-lg-0">
-//               <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-//               <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-//             </form>
-//           </div>
-//         </nav>
-//       )
-//     }
-//   }
-export { Header };
+export default Header;
+
+// import React from "react";
+// import { Jumbotron, Button } from 'reactstrap';
+
+// function Header({ title, name }) {
+//     return (
+//         <Jumbotron fluid>
+//             <h1>Hello, world! {title} : {name}</h1>
+//             <p>
+//                 This is a simple hero unit, a simple jumbotron-style component for calling
+//                 extra attention to featured content or information.
+//             </p>
+//             <p>
+//                 <Button variant="primary">Learn more</Button>
+//             </p>
+//         </Jumbotron>
+//     );
+// }
+// export { Header };
