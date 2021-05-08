@@ -5,6 +5,7 @@
   --primary-blue: #1266F1;
   --primary-red: #ef4035;
   --primary-red-hover: #f33501;
+  --primary-dark: #000000;
 }
 body{
    font-family: 'Roboto Condensed', sans-serif;
@@ -30,7 +31,8 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
-  border-top: 0.1875rem solid var(--primary-blue);
+  /* //border-top: 0.1875rem solid var(--primary-blue); */
+  border-top: 0.1875rem solid var(--primary-dark);
 }
 /* height: 6rem !important; */
 .navbar-brand {
@@ -45,10 +47,12 @@ nav ul li {
   }
 }
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
-  border-top: 0.1875rem solid var(--primary-orange);
+  /* border-top: 0.1875rem solid var(--primary-orange); */
+  border-top: 0.1875rem solid var(--primary-red-hover);
 }
 .navbar-nav > li > a:hover{
-  border-top: 0.1875rem solid var(--primary-orange);
+  /* border-top: 0.1875rem solid var(--primary-orange); */
+  border-top: 0.1875rem solid var(--primary-red-hover);
 }
 /********************************* HEADER *********************************************/
 .header-wraper{
@@ -119,14 +123,91 @@ nav ul li {
   }  
 }
 
+/*************************** ABOUT *****************************/
+.profile {
+  width: 18.75rem;
+  height: 18.75rem;
+}
+
+.my-details {
+  background-color: rgba(255, 255, 255, 0.747);
+}
+
+.about {
+  /* background-color: 'rgba(52, 52, 52, 0.8)'; */
+  /* opacity: 0.7; */
+  font-size: 1.1rem;
+  background: url(./assets/images/background.webp) no-repeat;
+  background-color: transparent;
+  /* position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 90vh; */
+}
+.profile-pic{
+  margin-top: 4.5rem;
+  margin-left: 2.5rem;
+  width: 300px;
+  height: 300px;
+}
+@media(max-width: 768px)
+{
+  .profile-pic{
+    width: 200px;
+    height: 200px;
+    margin-left: 5rem;
+  }
+}
+.hr1 {
+    border: 0;
+    height: 1px;
+    /* background: linear-gradient(to right, red, yellow); */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/************************** SKILLS *************************************/
+.focus {
+  transition: transform 0.3s;
+}
+
+.focus:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.image-style {
+  width: 3rem;
+}
+
+.font-details {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #231d5af8;
+}
+
+.font-details-b {
+  font-size: 3em;
+  font-weight: 500;
+  color: #ffffff;
+}
 
 
+.container-box {
+  width: 80%;
+  background-color: transparent;
+  position: relative;
+  z-index: 9;
+}
 
-
-
-
-
-
+.footer-style {
+  background-color: #000000;
+  color: #fff;
+ 
+}
 
 
 

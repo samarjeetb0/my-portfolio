@@ -1,11 +1,15 @@
 // import logo from './logo.svg';
 import './App.css';
-import { Button } from 'reactstrap';
+//import { Button } from 'reactstrap';
 import Particles from 'react-particles-js';
 import Header from "./components/header";
 import { Navbar } from './components/navbar';
+import About from './components/about';
+import Skills from './components/skills';
+import Contact from './components/contact';
 // import { ToastContainer, toast } from 'react-toastify';
-
+import Container from "react-bootstrap/Container";
+import Footer from './components/footer';
 function App() {
 
   // const btnHndl = () => {
@@ -31,6 +35,16 @@ function App() {
       />
       <Navbar />
       <Header />
+      <Container className="container-box rounded">
+        <About />
+      </Container>
+      <Container className="container-box rounded">
+        <Skills />
+      </Container>
+      <Container className="container-box rounded">
+        <Contact />
+      </Container>
+      <Footer />
       {/* <Button color='primary' outline onClick={btnHndl}>
         click me
       </Button> */}

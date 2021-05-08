@@ -3,12 +3,12 @@ import Typed from "react-typed"
 
 const Header = () => {
     return (
-        <div className="header-wraper">
+        <div className="header-wraper" id="home">
             <div className="main-info">
                 <h1>Hi, I am Samar</h1>
                 <Typed className="typed-text" strings={["Web Design","Web Development","Azure","AWS"]}
                 typeSpeed={40} backSpeed={60} loop/>
-                <a href="#" className="btn-main-offer">
+                <a href="#contact" className="btn-main-offer">
                     Contact Me
                 </a>
             </div>
